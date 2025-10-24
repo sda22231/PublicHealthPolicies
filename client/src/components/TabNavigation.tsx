@@ -10,6 +10,7 @@ export interface PolicyTab {
 interface TabNavigationProps {
   activeTab: string;
   onTabChange: (tabId: string) => void;
+  filteredTabs?: PolicyTab[] | null;
 }
 
 export const POLICY_TABS: PolicyTab[] = [
@@ -24,13 +25,15 @@ export const POLICY_TABS: PolicyTab[] = [
   { id: "pessoa-idosa", label: "Pessoa Idosa", icon: <UserCog className="h-4 w-4" /> },
 ];
 
-export default function TabNavigation({ activeTab, onTabChange }: TabNavigationProps) {
+export default function TabNavigation({ activeTab, onTabChange, filteredTabs }: TabNavigationProps) {
+  const tabsToDisplay = filteredTabs || POLICY_TABS;
+  
   return (
     <div className="border-b bg-card">
       <div className="container mx-auto px-4">
         <Tabs value={activeTab} onValueChange={onTabChange}>
           <TabsList className="w-full justify-start overflow-x-auto flex-wrap h-auto gap-1 bg-transparent p-0">
-            {POLICY_TABS.map((tab) => (
+            {tabsToDisplay.map((tab) => (
               <TabsTrigger
                 key={tab.id}
                 value={tab.id}
