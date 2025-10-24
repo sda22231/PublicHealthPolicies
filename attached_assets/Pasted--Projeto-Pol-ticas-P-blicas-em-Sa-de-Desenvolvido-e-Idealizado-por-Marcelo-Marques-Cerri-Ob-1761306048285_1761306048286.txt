@@ -1,0 +1,100 @@
+🧩 Projeto: Políticas Públicas em Saúde
+
+Desenvolvido e Idealizado por: Marcelo Marques Cerri
+
+🎯 Objetivo
+
+Criar um site/app educacional interativo chamado Políticas Públicas em Saúde, voltado para o estudo das principais políticas públicas da área da Enfermagem.
+O site deve ter design moderno, acadêmico e responsivo, com navegação por abas e estrutura modular organizada, para permitir futuras edições e inserção de conteúdo completo (que será enviado depois).
+
+Todo o material será parafraseado integralmente, sem omitir nada, e apresentado de forma didática e harmônica.
+
+🧭 Estrutura de Abas (ordem lógica)
+
+SUS — Sistema Único de Saúde
+
+PNH — Política Nacional de Humanização
+
+PNPS — Política Nacional de Promoção da Saúde
+
+PNSTT — Política Nacional de Saúde do Trabalhador e da Trabalhadora
+
+PNAISH — Política Nacional de Atenção Integral à Saúde do Homem
+
+Política Nacional da Saúde da Pessoa com Deficiência
+
+Política Nacional de Saúde Integral de LGBT
+
+Estatuto do Idoso
+
+Políticas da Pessoa Idosa
+
+📚 Estrutura Interna de Cada Aba
+
+Cada aba deve conter seções vazias (por enquanto) para futura inserção do conteúdo:
+
+Texto principal (será parafraseado depois)
+
+Tabelas comparativas / resumos práticos
+
+Linha do tempo dos marcos históricos
+
+Glossário de termos-chave
+
+Área de fixação (questões e gabaritos comentados)
+
+🎨 Design e Estilo
+
+Paleta de cores: azul, verde-água e branco.
+
+Estilo visual: limpo, moderno e acadêmico.
+
+Tipografia: clara, com títulos hierarquizados.
+
+Layout: responsivo e harmônico (funcionando bem no PC e celular).
+
+Interface: com ícones sutis, sombra leve e transições suaves entre abas.
+
+⚙️ Arquitetura de Arquivos
+
+Organizar o projeto de forma modular no Replit:
+
+/index.html          -> Página inicial
+/style.css           -> Estilos gerais do site
+/script.js           -> Scripts de interação
+/components/         -> Navbar, footer, cards, botões
+/pages/              -> Abas de conteúdo (uma pasta por política)
+    /sus.html
+    /pnh.html
+    /pnps.html
+    /pnstt.html
+    /pnaish.html
+    /pessoa-deficiencia.html
+    /lgbt.html
+    /idoso.html
+    /pessoa-idosa.html
+
+
+A página inicial (index.html) deve apresentar:
+
+“Políticas Públicas em Saúde — Desenvolvido e Idealizado por Marcelo Marques Cerri.”
+
+🔍 Funcionalidades
+
+Navegação por abas (transições suaves entre políticas)
+
+Campo de busca interno para localizar políticas e termos
+
+Design responsivo
+
+Preparado para recursos interativos futuros (quiz, glossário dinâmico, linha do tempo animada etc.)
+
+✨ Resumo da Tarefa
+
+Criar a estrutura completa do site, com todas as abas e pastas.
+
+Implementar o layout e design mais bonito e coerente possível, seguindo as diretrizes acima.
+
+Não inserir o conteúdo textual ainda — apenas estruturar o sistema e o design-base.
+
+Garantir que o resultado final seja organizado, elegante e fácil de editar.
