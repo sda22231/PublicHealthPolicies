@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import Header from "@/components/Header";
 import TabNavigation, { POLICY_TABS } from "@/components/TabNavigation";
 import PolicyContent from "@/components/PolicyContent";
+import PessoaIdosaContent from "@/components/PessoaIdosaContent";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search } from "lucide-react";
@@ -91,6 +92,8 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
+        ) : activeTab === "pessoa-idosa" ? (
+          <PessoaIdosaContent />
         ) : (
           <PolicyContent 
             title={currentPolicy.title}
