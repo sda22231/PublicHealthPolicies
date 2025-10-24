@@ -3,6 +3,13 @@ import Header from "@/components/Header";
 import TabNavigation, { POLICY_TABS } from "@/components/TabNavigation";
 import PolicyContent from "@/components/PolicyContent";
 import PessoaIdosaContent from "@/components/PessoaIdosaContent";
+import SUSContent from "@/components/SUSContent";
+import PNAISHContent from "@/components/PNAISHContent";
+import PNHContent from "@/components/PNHContent";
+import PNPSContent from "@/components/PNPSContent";
+import PNSTTContent from "@/components/PNSTTContent";
+import LGBTContent from "@/components/LGBTContent";
+import IdosoContent from "@/components/IdosoContent";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search } from "lucide-react";
@@ -92,6 +99,20 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
+        ) : activeTab === "sus" ? (
+          <SUSContent />
+        ) : activeTab === "pnh" ? (
+          <PNHContent />
+        ) : activeTab === "pnps" ? (
+          <PNPSContent />
+        ) : activeTab === "pnstt" ? (
+          <PNSTTContent />
+        ) : activeTab === "pnaish" ? (
+          <PNAISHContent />
+        ) : activeTab === "lgbt" ? (
+          <LGBTContent />
+        ) : activeTab === "idoso" ? (
+          <IdosoContent />
         ) : activeTab === "pessoa-idosa" ? (
           <PessoaIdosaContent />
         ) : (
